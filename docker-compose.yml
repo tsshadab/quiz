@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+      - PIP_BREAK_SYSTEM_PACKAGES=1
+      - PIP_NO_CACHE_DIR=1
+    volumes:
+      - ./backend:/usr/src/app
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+      - PIP_BREAK_SYSTEM_PACKAGES=1
+      - PIP_NO_CACHE_DIR=1
+      - BACKEND_URL=http://backend:8000
+    volumes:
+      - ./frontend:/usr/src/app
+    depends_on:
+      - backend

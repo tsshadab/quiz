@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "question": "What term refers to the practice of buying and selling the same stock multiple times in a single trading day?",
+        "options": [
+            {"option_key": "a", "option_text": "Swing trading"},
+            {"option_key": "b", "option_text": "Long-term investing"},
+            {"option_key": "c", "option_text": "Day trading"},
+            {"option_key": "d", "option_text": "Value investing"}
+        ],
+        "answerKey": "c"
+    },
+    {
+        "id": 2,
+        "question": "Which financial statement provides information about a company’s revenues and expenses over a specific period?",
+        "options": [
+            {"option_key": "a", "option_text": "Balance sheet"},
+            {"option_key": "b", "option_text": "Income statement"},
+            {"option_key": "c", "option_text": "Cash flow statement"},
+            {"option_key": "d", "option_text": "Statement of retained earnings"}
+        ],
+        "answerKey": "b"
+    },
+    {
+        "id": 3,
+        "question": "Which order type allows you to buy or sell a stock immediately at the best available price?",
+        "options": [
+            {"option_key": "a", "option_text": "Limit order"},
+            {"option_key": "b", "option_text": "Market order"},
+            {"option_key": "c", "option_text": "Stop order"},
+            {"option_key": "d", "option_text": "Day order"}
+        ],
+        "answerKey": "b"
+    },
+    {
+        "id": 4,
+        "question": "What does the term “bull market” signify in the stock market?",
+        "options": [
+            {"option_key": "a", "option_text": "A market with declining prices"},
+            {"option_key": "b", "option_text": "A market with increasing prices"},
+            {"option_key": "c", "option_text": "A market with no significant price changes"},
+            {"option_key": "d", "option_text": "A market with high volatility"}
+        ],
+        "answerKey": "b"
+    },
+    {
+        "id": 5,
+        "question": "Which term refers to the practice of borrowing shares from a broker to sell them with the expectation of buying them back at a lower price in the future?",
+        "options": [
+            {"option_key": "a", "option_text": "Short selling"},
+            {"option_key": "b", "option_text": "Long position"},
+            {"option_key": "c", "option_text": "Margin trading"},
+            {"option_key": "d", "option_text": "Hedging"}
+        ],
+        "answerKey": "a"
+    }
+]
