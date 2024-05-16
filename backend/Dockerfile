@@ -21,4 +21,4 @@ RUN useradd -m -u 1000 idp && chown -R idp /usr/src/app
 # Switch to user idp
 USER 1000
 # Run the application on port 8000 when the container launches  
-ENTRYPOINT ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "backend.api.main:app", "--bind", "0.0.0.0:8000"]
+ENTRYPOINT ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "backend.main:app", "--bind", "0.0.0.0:8000"]
