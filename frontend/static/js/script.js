@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         try {
-            const backendURL = process.env.BACKEND_URL || 'http://localhost:8000'; // Use the provided backend URL or default to localhost
+            const backendURL = 'http://localhost:8000'; // Use the provided backend URL or default to localhost
             const response = await fetch(`${backendURL}/quiz/api/submit`, {
                 method: 'POST',
                 headers: {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     window.restartQuiz = async function() {
         try {
-            const backendURL = process.env.BACKEND_URL || 'http://localhost:8000'; // Use the provided backend URL or default to localhost
+            const backendURL = 'http://localhost:8000'; // Use the provided backend URL or default to localhost
             const response = await fetch(`${backendURL}/quiz/api/restart`, {
                 method: 'POST'
             });
