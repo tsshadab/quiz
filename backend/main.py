@@ -5,8 +5,8 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../.
 
 from fastapi import APIRouter, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api.routers.v1 import quiz
-from backend.database.db_operations import init_db
+from api.routers.v1 import quiz
+from database.db_operations import init_db
 
 
 app = FastAPI(debug=True, docs_url="/quiz/api/docs", openapi_url="/quiz/api/openapi.json")

@@ -3,11 +3,11 @@ import json
 import os
 
 # Ensure the directory structure exists
-if not os.path.exists('backend/utils'):
-    os.makedirs('backend/utils')
+if not os.path.exists('utils'):
+    os.makedirs('utils')
 
 # Connect to SQLite database (or create it)
-conn = sqlite3.connect('backend/utils/quiz.db')
+conn = sqlite3.connect('utils/quiz.db')
 c = conn.cursor()
 
 # Create table for quiz questions
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS options (
 ''')
 
 # Insert data from JSON file into tables
-with open('backend/utils/quiz_data.json') as f:
+with open('utils/quiz_data.json') as f:
     data = json.load(f)
     for item in data:
         c.execute('''

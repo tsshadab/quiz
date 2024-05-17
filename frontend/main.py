@@ -7,10 +7,10 @@ from starlette.templating import Jinja2Templates
 app = FastAPI()
 
 # Mount the static files directory
-app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Set up Jinja2 templates
-templates = Jinja2Templates(directory="frontend/template")
+templates = Jinja2Templates(directory="template")
 
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):

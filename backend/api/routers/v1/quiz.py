@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from backend.models.quiz_model import QuizAnswer
-from backend.database.db_operations import get_quiz_data, evaluate_quiz, init_db
+from models.quiz_model import QuizAnswer
+from database.db_operations import get_quiz_data, evaluate_quiz, init_db
 
 quiz_router = APIRouter(prefix="/quiz/api", tags=["Quiz"])
 

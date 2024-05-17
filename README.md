@@ -12,3 +12,4 @@ This repository contains the codebase for both the backend and frontend applicat
 To run both the backend and frontend applications using Docker:
 ```shell
 docker-compose up -d
+

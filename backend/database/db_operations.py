@@ -1,9 +1,9 @@
 import sqlite3
 import json
-from backend.models.quiz_model import Question
+from models.quiz_model import Question
 from typing import Dict
 
-DATABASE = 'backend/utils/quiz.db'
+DATABASE = 'utils/quiz.db'
 
 def get_db():
     db = sqlite3.connect(DATABASE)
@@ -38,7 +38,7 @@ def init_db():
         c.execute('DELETE FROM questions')
 
         # Load initial data from JSON file
-        with open('backend/utils/quiz_data.json') as f:
+        with open('utils/quiz_data.json') as f:
             quiz_data = json.load(f)
             for item in quiz_data:
                 c.execute('''

@@ -16,7 +16,7 @@ This repository contains the codebase for the frontend of our application.
 ## Usage
 - To run the application locally:
     ```lua
-    uvicorn frontend.main:app --host 0.0.0.0 --port 8080
+    uvicorn main:app --host 0.0.0.0 --port 8080
     ```
 - To run the application using Docker:
     ```arduino

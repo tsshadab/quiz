@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function loadQuiz() {
         try {
-            const backendURL = process.env.BACKEND_URL || 'http://localhost:8000'; // Use the provided backend URL or default to localhost
+            const backendURL = 'http://localhost:8000'; // Use the provided backend URL or default to localhost
             const response = await fetch(`${backendURL}/quiz/api/questions`);
             quizData = await response.json();
             displayQuiz();
